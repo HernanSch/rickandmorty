@@ -1,0 +1,26 @@
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: silver;
+
+  &__menu{
+    display: flex;
+    justify-content: space-around;
+    list-style:none;
+    margin: 25px 50px 0 0;
+
+    li{
+      margin: 5px;
+    }
+
+  }
+
+  &__imagenLogo{
+    margin: 5px 0 0 15px;
+    width: 150px;
+    height: 80px;
+  }
+}
+
+

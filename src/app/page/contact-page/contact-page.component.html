@@ -1,0 +1,20 @@
+<form [formGroup]="userRegisterForm" (ngSubmit)="submit()">
+  <input type="text" formControlName="name">
+
+  <span *ngIf="isSubmit && userRegisterForm.controls['name'].errors &&userRegisterForm.controls['name'].errors['required']">Este campo es requerido</span>
+
+  <span *ngIf="isSubmit && userRegisterForm.controls['name'].errors &&userRegisterForm.controls['name'].errors['minlength']">Este campo tiene que tener minimo 3 caracteres</span>
+
+  <input type="text" formControlName="role">
+
+  <span *ngIf="isSubmit && userRegisterForm.controls['role'].errors">Este campo es requerido</span>
+
+  <input type="text" formControlName="age">
+
+  <span *ngIf="isSubmit && userRegisterForm.controls['age'].errors">Este campo es requerido</span>
+
+<button>Enviar</button>
+</form>
+
+
+
